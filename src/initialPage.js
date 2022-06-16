@@ -20,14 +20,17 @@ function navBar(){
     const navBarDiv = document.createElement('div')
         navBarDiv.classList.add('navBarDiv')
     const navBar = document.createElement('nav')
-        const home = document.createElement('button')
-            home.textContent = 'Home'
-        const menu = document.createElement('button')
-            menu.textContent = 'Menu'
-        const contact = document.createElement('button')
-            contact.textContent = 'Contact'
-    navBar.append(home,menu,contact)
+        const homeButton = document.createElement('button')
+        homeButton.textContent = 'Home'
+        const menuButton = document.createElement('button')
+        menuButton.textContent = 'Menu'
+        menuButton.setAttribute('id', 'menu-button')
+        const contactButton = document.createElement('button')
+        contactButton.textContent = 'Contact'
+    navBar.append(homeButton,menuButton,contactButton)
     navBarDiv.appendChild(navBar)
     return navBarDiv
 }
+
+
 export  {pageLoad,navBar}

@@ -1,3 +1,4 @@
+
 *{
     list-style: none;
 }
@@ -50,4 +51,9 @@ nav{
     background-color: rgb(171, 193, 212);
     border-style: double;
     width: 50vw
+}
+.menu-container{
+    background: url(./wood.jpg);
+    width:50vw;
+    height:70vh;
 }
