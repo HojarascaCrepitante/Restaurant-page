@@ -5,6 +5,8 @@
 body{
     display: flex;
     justify-content: center;
+    background-image: url(./wood.jpg);
+    background-size: 100%;
 }
 #content{
     display:flex;
@@ -53,7 +55,8 @@ nav{
     width: 50vw
 }
 .menu-container{
-    background: url(./wood.jpg);
     width:50vw;
     height:70vh;
+    background-image: url(./menu-card.jpg);
+    background-size: 100%;
 }

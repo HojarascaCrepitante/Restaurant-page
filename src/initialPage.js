@@ -24,7 +24,7 @@ function navBar(){
         homeButton.textContent = 'Home'
         const menuButton = document.createElement('button')
         menuButton.textContent = 'Menu'
-        menuButton.setAttribute('id', 'menu-button')
+        menuButton.setAttribute('id','menu-button')
         const contactButton = document.createElement('button')
         contactButton.textContent = 'Contact'
     navBar.append(homeButton,menuButton,contactButton)
