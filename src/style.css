@@ -61,6 +61,10 @@ nav{
     background-size: 100%;
     margin: 20px;
     border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
 .menu-container h2{
     text-align: center;

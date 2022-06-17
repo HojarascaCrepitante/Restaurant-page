@@ -1,6 +1,8 @@
 import './style.css';
 import coffee from './coffee.jpg'
 import cake from './coffee-and-somekindofcake.jpg'
+import donut from './coffee-and-donut.jpg'
+import tea_cookies from './tea-and-cookies.jpg'
 
 function menu(){
     const container = document.createElement('div')
@@ -28,15 +30,30 @@ function menu(){
             dish_2_description.textContent = 'Coffee + Some kind of cake, 200$';
             dish_2.appendChild(dish_2_description)
 
-    
-    
+    const dish_3 = document.createElement('div')
+    dish_3.classList.add('dish')
+        const dish_coffe_donut = new Image()
+            dish_coffe_donut.src = donut
+            dish_3.appendChild(dish_coffe_donut)
+        const dish_3_description = document.createElement('p')
+            dish_3_description.textContent = 'Coffee + Donut, $300';
+            dish_3.appendChild(dish_3_description)
+
+    const dish_4 = document.createElement('div')
+        dish_4.classList.add('dish')
+        const dish_4_tea = new Image()
+            dish_4_tea.src  = tea_cookies
+            dish_4.appendChild(dish_4_tea)
+        const dish_4_description = document.createElement('p')
+            dish_4_description.textContent = 'Tea + Cookies, 40$';
+            dish_4.appendChild(dish_4_description)
     
 
     
     
     
     
-    container.append(dish_1, dish_2)
+    container.append(dish_1, dish_2, dish_3, dish_4)
     return container
 }
 
