@@ -57,6 +57,37 @@ nav{
 .menu-container{
     width:50vw;
     height:70vh;
-    background-image: url(./menu-card.jpg);
+    background-image: url(./menu-card-og.jpg);
     background-size: 100%;
+    margin: 20px;
+    border-radius: 35px;
+}
+.menu-container h2{
+    text-align: center;
+}
+.dish img{
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+}
+.dish{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 10px;
+    width: 45%;
+    box-sizing: border-box;
+    border-style: dotted;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: gray;
+    background-image: url(./menu-card.jpg);
+}
+.dish p{
+    color: rgb(0, 0, 0);
+    font-size: large;
+    text-align: center;
+    padding-left: 20px;
 }

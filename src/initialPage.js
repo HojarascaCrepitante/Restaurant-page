@@ -11,7 +11,7 @@ function pageLoad(){
     element.appendChild(logo)
 
     const text = document.createElement('h1')
-    text.textContent = 'Epic restaurant'
+    text.textContent = 'Epic Coffee'
     element.appendChild(text)
     return element
 }
