@@ -3,6 +3,8 @@ import coffee from './coffee.jpg'
 import cake from './coffee-and-somekindofcake.jpg'
 import donut from './coffee-and-donut.jpg'
 import tea_cookies from './tea-and-cookies.jpg'
+import tea_cake from './tea-and-cake.jpg'
+import tea_biscuits from './tea-and-biscuits.jpg'
 
 function menu(){
     const container = document.createElement('div')
@@ -48,12 +50,27 @@ function menu(){
             dish_4_description.textContent = 'Tea + Cookies, 40$';
             dish_4.appendChild(dish_4_description)
     
-
+    const dish_5 = document.createElement('div')
+        dish_5.classList.add('dish')
+        const dish_5_tea = new Image()
+             dish_5_tea.src  = tea_cake
+             dish_5.appendChild(dish_5_tea)
+        const dish_5_description = document.createElement('p')
+            dish_5_description.textContent = 'Tea + Cake, 60$';
+            dish_5.appendChild(dish_5_description)
+        
+    const dish_6 = document.createElement('div')
+        dish_6.classList.add('dish')
+        const dish_6_tea = new Image()
+             dish_6_tea.src  = tea_biscuits
+             dish_6.appendChild(dish_6_tea)
+        const dish_6_description = document.createElement('p')
+            dish_6_description.textContent = 'Tea + Biscuits, 600$';
+            dish_6.appendChild(dish_6_description)
     
     
     
-    
-    container.append(dish_1, dish_2, dish_3, dish_4)
+    container.append(dish_1, dish_2, dish_3, dish_4, dish_5, dish_6)
     return container
 }
 
