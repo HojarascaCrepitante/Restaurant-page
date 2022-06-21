@@ -21,12 +21,14 @@ function navBar(){
         navBarDiv.classList.add('navBarDiv')
     const navBar = document.createElement('nav')
         const homeButton = document.createElement('button')
-        homeButton.textContent = 'Home'
+            homeButton.setAttribute('id','home-button')
+            homeButton.textContent = 'Home'
         const menuButton = document.createElement('button')
-        menuButton.textContent = 'Menu'
-        menuButton.setAttribute('id','menu-button')
+            menuButton.textContent = 'Menu'
+            menuButton.setAttribute('id','menu-button')
         const contactButton = document.createElement('button')
-        contactButton.textContent = 'Contact'
+            contactButton.setAttribute('id','contact-button')
+            contactButton.textContent = 'Contact'
     navBar.append(homeButton,menuButton,contactButton)
     navBarDiv.appendChild(navBar)
     return navBarDiv

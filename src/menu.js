@@ -8,7 +8,7 @@ import tea_biscuits from './tea-and-biscuits.jpg'
 
 function menu(){
     const container = document.createElement('div')
-    container.classList.add('menu-container')
+    container.setAttribute('id','menu-container')
 
     const header = document.createElement('h2')
         header.textContent = 'Our menu:'
