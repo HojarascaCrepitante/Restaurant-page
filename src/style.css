@@ -3,6 +3,12 @@
     src: url(./HomemadeApple-Regular.ttf);
     font-size: 600;
 }
+nav button:hover{
+    color: pink;
+}
+nav .active {
+    text-decoration: underline;
+}
 *{
     list-style: none;
     font-family: homemade;

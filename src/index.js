@@ -23,6 +23,12 @@ const menuButton = document.getElementById('menu-button');
         const mainContent = menu()
         content.appendChild(mainContent)
         }
+    menuButton.classList.add('active')
+        
+        contactButton.classList.remove('active')
+        
+        homeButton.classList.remove('active')
+        
     })
 
 const contactButton = document.getElementById('contact-button');
@@ -37,8 +43,12 @@ const contactButton = document.getElementById('contact-button');
         if(!document.getElementById('contact-container')){
         const mainContent = contact()
         content.appendChild(mainContent)
-    }
+        }
+        contactButton.classList.add('active')
+            homeButton.classList.remove('active')
+            menuButton.classList.remove('active')
     })
+
 const homeButton = document.getElementById('home-button');
     homeButton.addEventListener('click', ()=>{
         if(document.getElementById('menu-container'))
@@ -51,4 +61,9 @@ const homeButton = document.getElementById('home-button');
         const mainContent = home()
         content.appendChild(mainContent)
         }
+        homeButton.classList.add('active')
+            
+           
+       contactButton.classList.remove('active')
+       menuButton.classList.remove('active')
     })
